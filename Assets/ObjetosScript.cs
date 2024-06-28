@@ -22,7 +22,6 @@ public class ObjetosScript : MonoBehaviour
             if (a >= objetos.Length - 1)  a = 0; 
             else a++;
             nuevobj = Instantiate(objetos[a], new Vector3(0, 0, 0), Quaternion.identity);
-            Debug.Log(a);
         }
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
@@ -30,7 +29,6 @@ public class ObjetosScript : MonoBehaviour
             if (a <= 0) a = objetos.Length - 1;
             else a--;
             nuevobj = Instantiate(objetos[a], new Vector3(0, 0, 0), Quaternion.identity);
-            Debug.Log(a);
         }
     }
 }
